@@ -1,5 +1,10 @@
 const myKey = "0200a72705dd228112e788fd0e4d6d6c";
 const baseUrl = "https://api.themoviedb.org/3/";
+const path_tmdb = "https://image.tmdb.org/t/p";
+const no_poster =
+  "https://moviereelist.com/wp-content/uploads/2019/07/poster-placeholder.jpg";
+const no_image =
+  "https://thumbs.dreamstime.com/b/no-image-available-icon-photo-camera-flat-vector-illustration-132483141.jpg";
 
 function fetchTrendingMovies() {
   return fetch(`${baseUrl}trending/all/day?api_key=${myKey}`)
@@ -34,6 +39,9 @@ function fetchMovieReviews(movieId) {
 }
 
 export default {
+  path_tmdb,
+  no_poster,
+  no_image,
   fetchTrendingMovies,
   fetchMoviesWithQuery,
   fetchMovieDetails,

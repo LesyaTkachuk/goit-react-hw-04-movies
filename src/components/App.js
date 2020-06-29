@@ -2,8 +2,8 @@ import React, { Component, Suspense, lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
-import Layout from "./Layout/Layout";
-import Spinner from "./Spinner/Spinner";
+import Layout from "./common/Layout/Layout";
+import Spinner from "./common/Spinner/Spinner";
 
 import routes from "../routes";
 

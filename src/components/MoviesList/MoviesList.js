@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import fetchMovies from "../../services/moviesSearchApi";
 import routes from "../../routes";
 import styles from "./MoviesList.module.scss";
 
@@ -14,8 +15,8 @@ function MoviesList(props) {
           <img
             src={
               poster_path
-                ? `https://image.tmdb.org/t/p/w200${poster_path}`
-                : "https://moviereelist.com/wp-content/uploads/2019/07/poster-placeholder.jpg"
+                ? `${fetchMovies.path_tmdb}/w200${poster_path}`
+                : fetchMovies.no_poster
             }
             alt="film poster"
           />

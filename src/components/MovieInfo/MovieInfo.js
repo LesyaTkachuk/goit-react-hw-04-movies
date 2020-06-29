@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import fetchMovies from "../../services/moviesSearchApi";
 import styles from "./MovieInfo.module.scss";
 
 function MovieInfo({ movie }) {
@@ -9,8 +10,8 @@ function MovieInfo({ movie }) {
       <img
         src={
           poster_path
-            ? `https://image.tmdb.org/t/p/w300${poster_path}`
-            : "https://moviereelist.com/wp-content/uploads/2019/07/poster-placeholder.jpg"
+            ? `${fetchMovies.path_tmdb}/w300${poster_path}`
+            : fetchMovies.no_poster
         }
         alt="film poster"
       />

@@ -4,8 +4,8 @@ import { Route } from "react-router-dom";
 
 import SubNavigation from "../components/SubNavigation/SubNavigation";
 import MovieInfo from "../components/MovieInfo/MovieInfo";
-import Spinner from "../components/Spinner/Spinner";
-import Section from "../components/Section/Section";
+import Spinner from "../components/common/Spinner/Spinner";
+import Section from "../components/common/Section/Section";
 
 import fetchMovies from "../services/moviesSearchApi";
 import routes from "../routes";

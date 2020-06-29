@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { toast } from "react-toastify";
 
 import MoviesList from "../components/MoviesList/MoviesList";
-import Spinner from "../components/Spinner/Spinner";
+import Spinner from "../components/common/Spinner/Spinner";
 
 import fetchMovies from "../services/moviesSearchApi";
 

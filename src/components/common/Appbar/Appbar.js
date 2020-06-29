@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../../Navigation/Navigation";
 import styles from "./Appbar.module.scss";
 
 function Appbar() {

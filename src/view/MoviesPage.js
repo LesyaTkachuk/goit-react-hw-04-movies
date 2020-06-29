@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 import SearchForm from "../components/SearchForm/SearchForm";
 import MoviesList from "../components/MoviesList/MoviesList";
-import Spinner from "../components/Spinner/Spinner";
+import Spinner from "../components/common/Spinner/Spinner";
 
 import fetchMovies from "../services/moviesSearchApi";
 import getQueryParams from "../utils/getQueryParams";
